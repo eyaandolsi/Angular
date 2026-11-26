@@ -1,0 +1,20 @@
+<h2 class="h3 fw-bold mt-5 mb-4">
+  Organisateurs <span class="badge text-bg-dark rounded-pill">{{organizers.length}}</span>
+</h2>
+
+<div class="row g-4">
+  @for (organizer of organizers; track organizer.id) {
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 shadow-sm card-hover text-center p-4">
+        <img class="rounded-circle object-fit-cover mx-auto mb-3 border border-3 border-light shadow-sm"
+             style="width: 120px; height: 120px; object-position: top;"
+             [src]="organizer.picture" [alt]="organizer.name">
+        <h5 class="card-title mb-1">{{organizer.name}}</h5>
+        <p class="text-muted small mb-2">{{organizer.university}}</p>
+        <a class="btn btn-outline-primary btn-sm mt-auto" [href]="'mailto:' + organizer.email">
+          {{organizer.email}}
+        </a>
+      </div>
+    </div>
+  }
+</div>
