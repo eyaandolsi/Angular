@@ -20,7 +20,7 @@ export class Home {
   constructor() {}
   //2- second method() to be executed
   ngOnInit() {
-      this.title = 'Home';
+      this.title = 'Conférences à venir';
 
       const o1 = new Organizer(1, 'Alice Martin', 'alice@univ.fr', '/images/organizers/o1.jpg', 'Université de Paris');
       const o2 = new Organizer(2, 'Karim Ben Ali', 'karim@univ.tn', '/images/organizers/o2.jpg', 'Université de Tunis');
@@ -47,18 +47,18 @@ export class Home {
           nbr_Participation: 50,
           date: '10-11-2026',
           picture: 'https://...',
-          organizers: [o3,o2],
+          organizers: [],
         },
         {
           id: 3,
-          title: 'Vue Conference',
-          description: 'Vue Conference Developer',
+          title: 'Vue.js Summit',
+          description: "Une journée dédiée aux bonnes pratiques et à l'écosystème Vue.js.",
           address: 'ESPRIT-Tunisia',
           nbr_Max: 30,
           nbr_Participation: 10,
           date: '15-12-2026',
           picture: 'https://...',
-          organizers: [],   // cas vide
+          organizers: [o3, o2], // cas vide
         },
       ];
     }

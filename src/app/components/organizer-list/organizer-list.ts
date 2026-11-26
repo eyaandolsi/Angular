@@ -19,14 +19,14 @@ export class OrganizerList {
     new Organizer(
       2,
       'Sophie Durand',
-      'karim@univ.tn',
+      'sophie@univ.fr',
       '/images/organizers/o2.jfif',
       'Université de Lyon',
     ),
     new Organizer(
       3,
       'Karim Ben Ali',
-      'sophie@univ.fr',
+      'karim@univ.tn',
       '/images/organizers/o3.jfif',
       'Université de Tunis',
     ),
